@@ -5,9 +5,9 @@ var primerNum = parametros[3];
 var segundoNum = parametros[4];
 var resultado;
 
-if (comando="restar") {
+if (comando ==="restar") {
 resultado = Number(primerNum) - Number(segundoNum);
-} else if (comando = "sumar") {
+} else if (comando === "sumar") {
 resultado = Number(primerNum) + Number(segundoNum);
 }  
 
