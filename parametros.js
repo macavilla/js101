@@ -1,23 +1,25 @@
-console.log("Hola Node.js!");
+console.log("-------------------Ejercicio 1-----------------");
 
-var parametros = process.argv;
-var probandoParametros = parametros[2];
+var miEdad = process.argv[2];
+var aniosPerrx= Number(miEdad) *7;
 
-console.log("Hola", probandoParametros);
+console.log("Mi edad es ", miEdad, " que en años perro son", aniosPerrx);
 
-var nombre1 = process.argv[3];
-var nombre2 = process.argv[4];
+console.log("-------------------Ejercicio 2-----------------");
 
-console.log('Este archivo ha recibido 2 nombres como parámetros de ejecución');
-console.log('El primero es', nombre1);
-console.log('El segundo es', nombre2);
+var nombre = process.argv[3];
+var nota = process.argv[4];
 
 
-console.log("----------------------------------------------");
+	console.log("Lx alumnx ", nombre, "se sacó un ", nota);
+	if (nota >= 7) {
+		console.log("Felicitaciones por aprobar");
+	} if (nota <= 7 & nota>4) {
+		console.log("La próxima entrega espero un mejor trabajo");
+	} if (nota<= 4) {
+		console.log("Nos vimo' en marzo.")
+	}
 
-var numeroEnFormatoTexto1 = process.argv[5];
-var numeroEnFormatoTexto2 = process.argv[6];
 
 
-console.log('Los 2 números concatenados:', numeroEnFormatoTexto1 , numeroEnFormatoTexto1);
 
